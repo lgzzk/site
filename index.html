@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="aa">
 	<head>
 		<meta charset="utf-8" />
 		<title>LGZZK-博客小站</title>
@@ -12,41 +12,37 @@
 	</head>
 	<body>
 		<div id="sidebar">
-			<span title="关闭" class="ico" id="close_sidebar" ></span>
 			<ul>
-				<li><a href="#"><span></span>home</a></li> 	
+				<li><a href="#"><span></span>home</a></li>
 				<li><a href="#"><span></span>porject</a></li>
 				<li><a href="#"><span></span>message</a></li>
 				<li><a href="https://www.ffpy.online" target="_blank"><span></span>friend</a></li>
 				<li><a href="初代/" target="_blank"><span></span>version</a></li>
 				<li><a href="#"><span></span>about</a></li>
-			</ul>  
+			</ul>
 		</div>
 		<div id="content">
-			<div id="headText">
-			</div>
-			<span class="ico" id="open_sidebar" title="展开" ></span>
+			<div id="headText"></div>
 			<div id="content_slide"></div>
-		</div>  
-		<div id="footer">
-			<a href="https://beian.miit.gov.cn/#/Integrated/recordQuery" target="_blank">
-				湘ICP备2020024078号-1
-			</a>
-			相关:&nbsp;
-			<a href="https://cloud.baidu.com/product/bcd.html" target="_blank">
-				<span class="ico"></span>百度智能云·域名服务
-			</a>
-			<a href="https://cloud.tencent.com/" target="_blank">
-				<span class="ico"></span>腾讯云 - 云服务器
-			</a>
-			<a href="https://github.com/lgzzk1024/lgzzk" target="_blank">
-				<span class="ico"></span>GitHub
-			</a>
-			<a href="https://www.lgzzk.site" target="_blank">
-				© 2020-2021 LGZZK_site
-			</a>
 		</div>
-		<script src="js/LGZZK.1.js"></script>
-		<script src="js/lgzzk.js"></script>
 	</body>
+	<script src="./LGZZK.js"></script>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		Z("#content").append(
+			Z('<img class="ico" id="open_sidebar"/>')
+					.attr("src","https://nyancatcollection.com/images/MiniNyan.gif")
+					.attr("title","点我")
+					.css("width","150px")
+		);
+
+		Z("#sidebar").append(
+				Z('<img title="关闭" class="ico" id="close_sidebar"/>')
+						.attr("src","https://www.nyan.cat/cats/xmas.gif")
+						.attr("title","跑路")
+						.css("width","100px")
+		);
+
+	</script>
+	<script src="js/lgzzk.js"></script>
 </html>
